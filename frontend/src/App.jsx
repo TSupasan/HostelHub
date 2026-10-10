@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { checkBackend } from "./services/api";
 import HostelAdminDashboard from './pages/HostelAdminDashboard';
+import './App.css'
 
 function App() {
   const [message, setMessage] = useState("Connecting to backend...");
@@ -17,9 +18,7 @@ function App() {
 
   return (
     <div>
-      <h1>HostelHub</h1>
-      <HostelAdminDashboard />
-      <p>{message}</p>
+      <HostelAdminDashboard/>
     </div>
   );
 }
