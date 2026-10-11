@@ -3,7 +3,7 @@ import {
   LayoutDashboard, Users, Home, BedDouble, 
   Wrench, LogOut, ShieldAlert, Bell, User 
 } from 'lucide-react';
-import '../App.css'; // CSS එක Import කරන්න
+import '../App.css';
 
 const HostAdminLayout = ({ children }) => {
   const navItems = [

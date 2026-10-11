@@ -7,7 +7,7 @@ const RoomManagement = () => {
   const [capacity, setCapacity] = useState('');
   const [loading, setLoading] = useState(true);
 
-  // Load existing rooms from backend on initial mount
+  
   useEffect(() => {
     loadRooms();
   }, []);
@@ -47,7 +47,6 @@ const RoomManagement = () => {
     <div style={{ padding: '20px' }}>
       <h2>Room Management</h2>
       
-      {/* Add Room Form */}
       <div style={{ marginBottom: '30px', padding: '15px', border: '1px solid #ddd', borderRadius: '5px' }}>
         <h3>Add New Room</h3>
         <form onSubmit={handleAddRoom}>
